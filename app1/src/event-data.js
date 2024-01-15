@@ -19,7 +19,7 @@ export class EventData1 extends React.Component{
                 <br/><br/>
                 <button onClick={(ev) => this.onClickAdd(ev)}>10 + 20</button>
                 <br/><br/>
-                <button onClick={(ev) => this.onClickAdd.bind(ev)}>30 * 40</button>
+                <button onClick={this.onClickAdd.bind(this)}>30 * 40</button>
                 <br/><br/>
             </div>
         )
