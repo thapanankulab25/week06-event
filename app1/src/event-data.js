@@ -4,10 +4,10 @@ export function Table() {
 
     const data = [
       ['Php', 100],
-      ['Nodemon', 200],
+      ['Angular', 200],
       ['NodeJs', 150],
       ['NextJs', 300],
-      ['NuxtJs', 120]
+      ['.Net', 120]
     ]
     const onMouseOverRow = (ev) => {
         ev.target.parentNode.style.backgroundColor = '#FAEDCB';
