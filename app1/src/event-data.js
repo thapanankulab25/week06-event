@@ -10,14 +10,14 @@ export function Table() {
       ['NuxtJs', 120]
     ]
     const onMouseOverRow = (ev) => {
-        ev.target.parentNode.style.backgroundColor = 'yellow';
+        ev.target.parentNode.style.backgroundColor = '#FAEDCB';
     }
     const onMouseOutRow = (ev) =>{
         ev.target.parentNode.style.backgroundColor = 'white';
     }
     return (
-        <table border="1" cellPadding={5} style={{ margin: 'auto', marginTop: 30 }}>
-          <tr><th>Product</th><th>Price</th></tr>
+        <table border="1" cellPadding={5} style={{ margin: 'auto', marginTop: 30,backgroundColor:'#C9E4DE'}}>
+          <tr ><th>Product</th><th>Price</th></tr>
           {
             data.map(item => {
               return (
@@ -28,12 +28,11 @@ export function Table() {
             })
           }
         </table>
+        
       );
     }
 
-
-
-
+    
 // export function EventData2(){
 //     const onClickStartStop = (ev) => {
 //         let t = ev.target.innerText
