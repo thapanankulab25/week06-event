@@ -1,14 +1,18 @@
 import React, {Component} from 'react'
-export default class button extends Component{
+export default class Button extends Component{
+
+    constructor(){
+        super()
+        this.onClickButtonOK = this.onClickButtonOK.bind(this)
+    }
     showAlert(msg){
         alert(msg)
     }
-
-    onClcikButoonOk(){
-        this.showAlert('Hello')
+    onClickButtonOK(){
+        this.showAlert('Hello World')
     }
     render(){
-        return <button onClick={this.onClickButtonOk}>OK</button>
+        return <button onClick={this.onClickButtonOK}>OK</button>
     }
 }
 // export default class Calendar extends Component {
